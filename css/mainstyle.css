@@ -1,1 +1,27 @@
-/**/
+#logoJpg{
+    height:50px;/*图片的大小控制*/
+}
+
+#navbar-brand{
+    padding: 0px;/*我直接重写nabbar-brand的padding*/
+    margin-left: 34.25px;/*将<a>标签移到<div id="brand-header">的中间*/
+}
+
+#mainMenu{
+    background-color:#F0F0F0;
+}
+
+#signUp{
+    height: 50px;
+}
+
+#signUp .breadcrumb{ /*重写breadcrumb的许多属性  breadcrumb的内边距和外边距和背景颜色都修改了*/  
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 28px;
+    margin-bottom: 0px;
+    background-color:#F0F0F0;
+    color:#337ab7;
+}
+
+

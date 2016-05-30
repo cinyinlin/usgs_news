@@ -19,10 +19,42 @@
 <body>
     <!-- ====请在body内部施行滚动监听====  -->
     <!--导航栏-->
-    <div class="navbar" id="mainMenu">
-        <div class="container">
-            <!--使用标准的bootstrap 960px-->
-
+    <div class="container"><!--960px-->
+        <div class="navbar" id="mainMenu"><!--navbar-inner类在3.0中被删除-->
+            <div class="navbar-header col-md-3"><!--注意col-md-*-->
+            <a class="navbar-brand" href="" id="navbar-brand">    
+                <img src="images/logo.jpg" id="logoJpg"></img></a>
+            </div>
+            <ul class="nav navbar-nav nav-pills col-md-6">
+            <!--nav-tabs类进行tabs类布局 而nav-pills是胶囊布局-->
+                    <li class="active"><a href="">鼻毛之家</a></li>
+                    <li><a href="">动态</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="workDrop">
+                            工作
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu"> 
+                            <li><a href="">严摄</a></li>
+                            <li class="divider"></li>
+                            <li><a href="">正稿</a></li>
+                            <li class="divider"></li>
+                            <li><a href="">新媒</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">文化与历史</a></li>
+                    <li><a href="">支持与下载</a></li>
+            </ul>
+            <div class="col-md-3" id="signUp">
+                <ul class="breadcrumb">
+                    <li>XX鼻毛</li>
+                    <li><button type="button" class="btn btn-xs"><!--超小按钮-->
+                            <span class="glyphicon glyphicon-user"></span>
+                        </button>
+                    </li>
+                    <li><button type="button" class="btn btn-xs">注销</button></li>
+                </ul>
+            </div>
         </div>
     </div>
 
@@ -87,6 +119,7 @@
 
     <!--这里的jquery统一用2.2.1版本-->
     <script src="js/jquery-2.2.1.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/indexbehavior.js"></script>
 </body>
 
