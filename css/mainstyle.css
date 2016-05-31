@@ -15,7 +15,7 @@
     height: 50px;
 }
 
-#signUp .breadcrumb{ /*重写breadcrumb的许多属性  breadcrumb的内边距和外边距和背景颜色都修改了*/  
+#signUp .breadcrumb{ /*重写breadcrumb的许多属性  breadcrumb的内边距和外边距和背景颜色和字体颜色都修改了*/  
     padding-top: 0px;
     padding-bottom: 0px;
     margin-top: 28px;
@@ -24,4 +24,7 @@
     color:#337ab7;
 }
 
-
+#mainHead{
+    padding-top: 50px;/*将整个mainHead向下移一下，保证navbar-fixed-top的要求*/
+   /* border-bottom: 1px solid black;*/
+}

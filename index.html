@@ -14,56 +14,92 @@
     <link href="css/mainstyle.css" rel="stylesheet" type="text/css">
 </head>
 
-
-
 <body>
     <!-- ====请在body内部施行滚动监听====  -->
     <!--导航栏-->
-    <div class="container"><!--960px-->
-        <div class="navbar" id="mainMenu"><!--navbar-inner类在3.0中被删除-->
-            <div class="navbar-header col-md-3"><!--注意col-md-*-->
-            <a class="navbar-brand" href="" id="navbar-brand">    
-                <img src="images/logo.jpg" id="logoJpg"></img></a>
+    <div class="navbar navbar-fixed-top" id="mainMenu">
+        <!--将这个放在外部这样的灰色才有一整条好不好 但是内部的原件固定在960pxcontainer内部-->
+        <!--用navbar-fixed-top类将导航栏固定在上面-->
+        <div class="container">
+            <!--960px-->
+            <!--navbar-inner类在3.0中被删除-->
+            <div class="navbar-header col-md-3">
+                <!--注意col-md-*-->
+                <a class="navbar-brand" href="" id="navbar-brand">
+                    <img src="images/logo.jpg" id="logoJpg"></img>
+                </a>
             </div>
             <ul class="nav navbar-nav nav-pills col-md-6">
-            <!--nav-tabs类进行tabs类布局 而nav-pills是胶囊布局-->
-                    <li class="active"><a href="">鼻毛之家</a></li>
-                    <li><a href="">动态</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="workDrop">
+                <!--nav-tabs类进行tabs类布局 而nav-pills是胶囊布局-->
+                <!--为何加了navbar-nav就会变大-->
+                <li class="active"><a href="">鼻毛之家</a></li>
+                <li><a href="">动态</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="workDrop">
                             工作
                             <b class="caret"></b>
                         </a>
-                        <ul class="dropdown-menu"> 
-                            <li><a href="">严摄</a></li>
-                            <li class="divider"></li>
-                            <li><a href="">正稿</a></li>
-                            <li class="divider"></li>
-                            <li><a href="">新媒</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">文化与历史</a></li>
-                    <li><a href="">支持与下载</a></li>
+                    <ul class="dropdown-menu">
+                        <li><a href="">严摄</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">正稿</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">新媒</a></li>
+                    </ul>
+                </li>
+                <li><a href="">文化与历史</a></li>
+                <li><a href="">支持与下载</a></li>
             </ul>
             <div class="col-md-3" id="signUp">
                 <ul class="breadcrumb">
-                    <li>XX鼻毛</li>
-                    <li><button type="button" class="btn btn-xs"><!--超小按钮-->
+                    <li><b>XX</b><b>鼻毛</b></li>
+                    <li>
+                        <button type="button" class="btn btn-xs">
+                            <!--超小按钮-->
                             <span class="glyphicon glyphicon-user"></span>
+                            <!--这些图标的使用要引入boorstrap的font-->
                         </button>
                     </li>
-                    <li><button type="button" class="btn btn-xs">注销</button></li>
+                    <li>
+                        <button type="button" class="btn btn-xs">注销</button>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
 
     <!--主页头部-->
-    <div id="mainHead">
-        <div class="container">
+<div id="mainHead">
+    <div class="container">
+        <div class="col-md-3" id="mainHeadNavList">
+            <ul class="nav nav-pills nav-stacked">
+                <!--如果你要nav-stacked就不要用navbar-nav navbar-nav是默认浮动布局的-->
+                <li class="active"><a href="">鼻毛之家</a></li>
+                <li><a href="">动态</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="workDrop">
+                            工作
+                            <b class="caret"></b>
+                        </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">严摄</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">正稿</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">新媒</a></li>
+                    </ul>
+                </li>
+                <li><a href="">文化与历史</a></li>
+                <li><a href="">支持与下载</a></li>
+            </ul>
+        </div>
+        <div class="col-md-6" id="mainHeadCarousel">
+        </div>
 
+        <div class="col-md-3" id="mainHeadHotSpot">
         </div>
     </div>
+</div>
 
     <!--主页新闻动态-->
     <div id="mainNews">
