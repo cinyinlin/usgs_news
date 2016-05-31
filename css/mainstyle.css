@@ -1,19 +1,24 @@
 /* 首页样式 */
 
+/** 新闻板块样式 **/
 
-/* 新闻板块样式 */
-div#mainNews h2 {
-    font-family: "幼圆","微软雅黑";
+div#mainNews {
+    border: 1px solid black;
+    padding:50px 0;
 }
 
-/*新闻详情*/
+div#mainNews h2 {
+    font-family: '幼圆', '微软雅黑';
+}
 
-div#newsDetail > div#newsContent > section > p {
+p.description {
     text-align: justify;
 }
 
 
-/* 新闻动态 */
+/***新闻详情 ***/
+
+/*** 新闻动态 ***/
 
 ol {
     width: 100%;
@@ -24,7 +29,6 @@ div.dynamicItem {
     width: 100%;
     height: 20px;
     margin-bottom: 10px;
-    ;
 }
 
 ol.dynamicItems > div.dynamicItem > span.itemNew {
@@ -45,10 +49,53 @@ ol.dynamicItems > div.dynamicItem > li {
     border-bottom: 1px solid black;
 }
 
-ol.dynamicItems > div.dynamicItem > li > span.itemContent {
-}
-
 ol.dynamicItems > div.dynamicItem > li > span.dynamicDate {
     float: right;
     margin-right: 10px;
+}
+
+div#newsMore > a#btnMore {
+    margin-top:10px;
+}
+
+/** 工作界面 **/
+/*** 严摄 ***/
+div#workPhotograph {
+    border: 1px solid black;
+    padding:50px 0;
+}
+div.workTitle {
+    text-align: center;
+}
+
+div.workTitle > h1 {
+    font-family: "微软雅黑";
+    font-size: 8em;
+    line-height: 1.5;
+    width: 80%;
+    height: 400px;
+    margin:0;
+    padding: 10px 5px 15px 5px;
+    border: 1px solid black;
+}
+
+div#carousel-photograph {
+    height:400px;
+}
+
+div#carousel-photograph > div.carousel-inner > div.item > img {
+    margin:0 auto;
+    max-height: 400px;
+}
+
+div#photographDetails {
+    /*- 设置垂直居中_父元素 -*/
+    display: table;
+    height: 400px;
+}
+
+div#photographDetails > div {
+    /*- 设置垂直居中_子元素 -*/
+    display: table-cell;
+    vertical-align: middle;
 }
