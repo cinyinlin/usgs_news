@@ -1,1 +1,105 @@
-/**/
+/** 支持与下载部分 **/
+
+div#mainSupportAndDownload {
+    border: 1px solid black;
+    height: 400px;
+}
+
+div#mainSupportAndDownload > div.container > div.SupDowTitle {
+    width: 70%;
+    margin: 0 auto;
+}
+
+div#mainSupportAndDownload > div.container > div.SupDowTitle > h2 {
+    font-family: "幼圆", "微软雅黑";
+    padding-bottom: 12px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+div#mainSupportAndDownload > div.container > div.SupDowContent {
+    width: 70%;
+    margin: 0 auto;
+}
+
+div#mainSupportAndDownload > div.container > div.SupDowContent > div {
+    height: 300px;
+}
+
+div#mainSupportAndDownload > div.container > div.SupDowContent p {
+    max-height: 250px;
+    text-align: justify;
+    overflow: hidden;
+}
+
+div#mainSupportAndDownload > div.container > div.SupDowContent p.col-md-6 {
+    max-height: 200px;
+    overflow: hidden;
+}
+
+
+/** 页脚 **/
+
+footer#mainFooter > div.container {
+    width: 100%;
+}
+
+footer#mainFooter > div.container > div.row > div {
+    height: 200px;
+    border: 1px solid black;
+}
+
+
+/*** 关于信息 ***/
+
+footer#mainFooter > div.container > div.row > div#aboutInfo * {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+footer#mainFooter > div.container > div.row > div#aboutInfo ul {
+    padding: 0;
+}
+
+footer#mainFooter > div.container > div.row > div#aboutInfo ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*** 友情链接 ***/
+
+footer#mainFooter > div.container > div.row > div#friendsLinks > h3 {
+    text-align: center;
+    font-family: "幼圆", "微软雅黑";
+}
+
+footer#mainFooter > div.container > div.row > div#friendsLinks div.row {
+    margin-top: 22px;
+    text-align: center;
+}
+
+
+/*** 联系我们 ***/
+
+footer#mainFooter > div.container > div.row > div#contactUS div.row {
+    margin: 15px;
+}
+
+footer#mainFooter > div.container > div.row > div#contactUS div.row > h3 {
+    font-size: 2.8em;
+    font-family: "微软雅黑";
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 18px;
+    text-align: center;
+    line-height: 1.3;
+    letter-spacing: 10px;
+    border: 1px solid black;
+}
+
+footer#mainFooter > div.container > div.row > div#contactUS div.row > img#QRCode {
+    padding: 0;
+    margin-top: 18px;
+}
