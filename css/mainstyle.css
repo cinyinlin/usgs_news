@@ -1,3 +1,4 @@
+/*导航栏内容*/
 #logoJpg {
     height: 50px;
     /*图片的大小控制*/
@@ -28,16 +29,70 @@
     color: #337ab7;
 }
 
+
+/*头部内容*/
 #mainHead {
     padding-top: 70px;
     /*将整个mainHead向下移一下，保证navbar-fixed-top的要求*/
+}
+
+#mainHeadNavList{
+    border:1px solid #F0F0F0;
 }
 
 #itemBackground {
     background-color: rgba(240, 240, 240, 0.2);
     /*这个第四个参数是透明度*/
 }
-    
+
+
+/*mainCultreAndHistory内容*/
+@font-face {  
+  font-family: Black-gauge;  
+  src: url('../fonts/Black-gauge.otf');  
+}  
+#mainCultreAndHistory strong{
+    font-family: Black-gauge;
+    font-size: 50px;
+}
+
+#mainCultreAndHistory button{
+    width: 80%;
+    height: 200px;
+}
+
+#mainCultreAndHistory button div{
+    font-size: 80px;
+    color:red;
+    opacity: 0.9;
+    font-weight: bolder;
+    font-family: Black-gauge;
+    letter-spacing: 30px;
+}
+
+
+/*mainSupportAndDownload内容*/
+#mainSupportAndDownload strong{
+    font-family: Black-gauge;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
